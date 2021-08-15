@@ -32,7 +32,7 @@ export default function SignInSide() {
     }
   };
   let validationSchema = yup.object({
-    email: yup.string().required("enter your email"),
+    email: yup.string().email().required("enter your email"),
 
     password: yup.string().required("password is required"),
   });
